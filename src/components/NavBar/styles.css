@@ -1,0 +1,39 @@
+.navbar-container {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background: var(--color-primary);
+  color: var(--color-text-header);
+  font-weight: bold;
+}
+
+.navbar-container span {
+  margin-right: 5rem;
+}
+
+.navbar-container a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.navbar-container a:link {
+  color: #ccc;
+}
+.navbar-container a:visited {
+  color: #ccc;
+}
+.navbar-container a:hover {
+  color: var(--color-text-header);
+}
+.navbar-container a:focus {
+  color: var(--color-text-header);
+}
+.navbar-container a:active {
+  color: var(--color-text-header);
+}
+
+.navbar-container a:last-child {
+  margin-left: 5rem;
+}
