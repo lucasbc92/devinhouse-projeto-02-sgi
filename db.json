@@ -1,16 +1,30 @@
 {
-    "produtos": [  
-    ],
-    "empresas": [  
-    ],
-    "fornecedores": [
-        "Del Valle",
-        "Amazon",
-        "Magazine Luiza"
-    ],
-    "categorias": [
-        "Sucos",
-        "Eletrônicos",
-        "Celulares"
-    ]
-  }
+  "produtos": [],
+  "empresas": [
+    {
+      "corporateName": "Supermercado Angeloni",
+      "fantasyName": "Angeloni",
+      "cnpj": "83.646.984/0016-96",
+      "email": "angeloni@angeloni.com.br",
+      "cep": "88085-970",
+      "address": "Avenida Ivo Silveira",
+      "addressNumber": "2445",
+      "neighborhood": "Capoeiras",
+      "city": "Florianópolis",
+      "complement": "Supermercado",
+      "latitude": "-27.599286",
+      "longitude": "-48.602932",
+      "id": 1
+    }
+  ],
+  "fornecedores": [
+    "Del Valle",
+    "Amazon",
+    "Magazine Luiza"
+  ],
+  "categorias": [
+    "Sucos",
+    "Eletrônicos",
+    "Celulares"
+  ]
+}

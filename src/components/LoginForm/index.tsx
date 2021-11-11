@@ -28,7 +28,7 @@ export const LoginForm = () => {
       <h1 className="login-title">Login</h1>
       <form onSubmit={handleSubmit} className="login-form-container">
         <input
-          type="text"
+          type="email"
           name="user"
           placeholder="Usuário"
           value={user}

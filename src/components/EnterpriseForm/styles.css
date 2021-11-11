@@ -3,22 +3,28 @@
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   margin: 3rem 0;
   gap: 1rem;
-  width: 700px;
+  max-width: 700px;
 }
 
 .enterprise-form-container .form-title {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
   align-items: center;
   font-size: 1.5rem;
   width: 100%;
 }
 
-.enterprise-form-container .form-title .form-buttons {
+.enterprise-form-container .form-title .form-buttons button {
   margin: 0 2rem;
+}
+
+.enterprise-form-container .form-title .form-buttons .btn-cancelar {
+  background-color: tomato;
 }
 
 .enterprise-form-container .corp-data,
@@ -27,12 +33,25 @@
   width: 100%;
 }
 
-.enterprise-form-container .corp-data .corp-group {
-  /* display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  justify-content: space-between; */
+.corp-group, .position-group {
   display: flex;
   flex-wrap: wrap;
+  gap: 2rem;
   justify-content: space-between;
+}
+
+.address-group-1 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+}
+
+.address-group-2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  gap: 1rem;
+}
+
+.input-address, .input-email {
+  flex-grow: 2;
 }

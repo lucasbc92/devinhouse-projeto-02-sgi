@@ -18,11 +18,14 @@ export const NavBar: React.FC<NavBarProps> = ({ links }) => {
   return (
     <nav className="navbar-container">
       <span>Olá, {user}!</span>
-      {links.map((link, index) => (
-        <Link key={index} to={link.to}>
-          {link.title}
-        </Link>
-      ))}
+      <div className="navbar-links">
+        {links.map((link, index) => (
+          <Link key={index} to={link.to}>
+            {link.title}
+          </Link>
+        ))}
+      </div>
+
     </nav>
   );
 };

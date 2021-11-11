@@ -1,39 +1,48 @@
 .navbar-container {
-  height: 50px;
+  height: 6rem;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 1rem;
   background: var(--color-primary);
   color: var(--color-text-header);
   font-weight: bold;
+  width: 100%;
+  
 }
 
 .navbar-container span {
   margin-right: 5rem;
 }
 
-.navbar-container a {
+.navbar-container .navbar-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.navbar-container .navbar-links a {
   text-decoration: none;
   text-transform: uppercase;
 }
 
-.navbar-container a:link {
+.navbar-container .navbar-links a:link {
   color: #ccc;
 }
-.navbar-container a:visited {
+.navbar-container .navbar-links a:visited {
   color: #ccc;
 }
-.navbar-container a:hover {
+.navbar-container .navbar-links a:hover {
   color: var(--color-text-header);
 }
-.navbar-container a:focus {
+.navbar-container .navbar-links a:focus {
   color: var(--color-text-header);
 }
-.navbar-container a:active {
+.navbar-container .navbar-links a:active {
   color: var(--color-text-header);
 }
 
-.navbar-container a:last-child {
+.navbar-container .navbar-links a:last-child {
   margin-left: 5rem;
 }
