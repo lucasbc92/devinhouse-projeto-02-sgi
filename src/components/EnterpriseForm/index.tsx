@@ -68,11 +68,11 @@ export const EnterpriseForm = () => {
       return;
     }
     try {
-      await fetch('http://localhost:3333/empresas', {
+      await fetch("http://localhost:3333/enterprises", {
         method: "POST",
         headers: {
-          "Accept": "application/json",
-          "Content-Type": "application/json"
+          Accept: "application/json",
+          "Content-Type": "application/json",
         },
         body: JSON.stringify({
           corporateName,
@@ -86,14 +86,13 @@ export const EnterpriseForm = () => {
           city,
           complement,
           latitude,
-          longitude
-        })
-      })
+          longitude,
+        }),
+      });
       alert("Empresa cadastrada com sucesso!");
     } catch (error) {
       alert("Houve um problema ao tentar cadastrar a empresa.");
     }
-    
   };
 
   return (
@@ -101,8 +100,12 @@ export const EnterpriseForm = () => {
       <div className="form-title">
         <h1>Nova Empresa</h1>
         <div className="form-buttons">
-          <button className="btn-cancelar" onClick={() => history.push("/")}>Cancelar</button>
-          <button type="submit" className="btn-salvar">Salvar</button>
+          <button className="btn-cancelar" onClick={() => history.push("/")}>
+            Cancelar
+          </button>
+          <button type="submit" className="btn-salvar">
+            Salvar
+          </button>
         </div>
       </div>
       <div className="corp-data">
@@ -141,7 +144,7 @@ export const EnterpriseForm = () => {
           </label>
           <label className="input-email">
             E-mail
-            <input              
+            <input
               type="email"
               name="email"
               placeholder=""
@@ -165,7 +168,7 @@ export const EnterpriseForm = () => {
           </label>
           <label className="input-address">
             Endereço
-            <input              
+            <input
               type="text"
               name="address"
               placeholder=""

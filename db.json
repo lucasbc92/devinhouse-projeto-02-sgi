@@ -1,9 +1,9 @@
 {
-  "produtos": [],
-  "empresas": [
+  "products": [],
+  "enterprises": [
     {
-      "corporateName": "Supermercado Angeloni",
-      "fantasyName": "Angeloni",
+      "corporateName": "Hipermercado Angeloni Capoeiras ",
+      "fantasyName": "Angeloni Capoeiras",
       "cnpj": "83.646.984/0016-96",
       "email": "angeloni@angeloni.com.br",
       "cep": "88085-970",
@@ -11,18 +11,33 @@
       "addressNumber": "2445",
       "neighborhood": "Capoeiras",
       "city": "Florianópolis",
-      "complement": "Supermercado",
+      "complement": "Hipermercado",
       "latitude": "-27.599286",
       "longitude": "-48.602932",
       "id": 1
+    },
+    {
+      "corporateName": "Supermercado Imperatriz Coqueiros",
+      "fantasyName": "Imperatriz Coqueiros",
+      "cnpj": "82.956.160/0001-73",
+      "email": "imperatriz@imperatriz.com.br",
+      "cep": "88080-000",
+      "address": "Av. Eng. Max de Souza",
+      "addressNumber": "740",
+      "neighborhood": "Coqueiros",
+      "city": "Florianópolis",
+      "complement": "Supermercado",
+      "latitude": "-27.6007542",
+      "longitude": "-48.5893426",
+      "id": 2
     }
   ],
-  "fornecedores": [
+  "providers": [
     "Del Valle",
     "Amazon",
     "Magazine Luiza"
   ],
-  "categorias": [
+  "categories": [
     "Sucos",
     "Eletrônicos",
     "Celulares"

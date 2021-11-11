@@ -19,6 +19,10 @@
   width: 100%;
 }
 
+.enterprise-form-container .form-title h1 {
+  margin: 1rem;
+}
+
 .enterprise-form-container .form-title .form-buttons button {
   margin: 0 2rem;
 }
@@ -33,7 +37,8 @@
   width: 100%;
 }
 
-.corp-group, .position-group {
+.corp-group,
+.position-group {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
@@ -52,6 +57,21 @@
   gap: 1rem;
 }
 
-.input-address, .input-email {
+.input-address,
+.input-email {
   flex-grow: 2;
+}
+
+@media (max-width: 768px) {
+  .address-group-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .address-group-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
 }
