@@ -1,5 +1,42 @@
 {
-  "products": [],
+  "products": [
+    {
+      "imgUrl": "https://conteudo.imguol.com.br/c/entretenimento/e0/2018/10/26/laranja-1-1540588355636_v2_750x421.jpgx",
+      "name": "Laranja Bahia",
+      "cost": "1.20",
+      "description": "Além de ser rica em vitamina C, a fruta possui flavonoides e diversos nutrientes importantes para prevenir doenças e deixar o organismo mais resistente.",
+      "provider": "Baungarten",
+      "category": "Frutas",
+      "id": 1
+    },
+    {
+      "imgUrl": "https://a-static.mlcdn.com.br/618x463/suco-del-valle-nectar-uva-lata-290ml/drogariaaraujosa/876569/37c8127fef992437815dbcbf7c6a554a.jpg",
+      "name": "Suco Del Valle Néctar Uva Lata 290ml",
+      "cost": "3.75",
+      "description": "Fonte de vitamina C, sem adição de conservantes. Além de saboroso, não contém glúten.",
+      "provider": "Del Valle",
+      "category": "Sucos",
+      "id": 2
+    },
+    {
+      "imgUrl": "https://cdn.awsli.com.br/600x1000/1316/1316477/produto/93843409/capim-limao-unidade-ab9abc73.jpg",
+      "name": "Capim Limão",
+      "cost": "4.19",
+      "description": "O capim santo, também conhecido como capim limão ou erva-príncipe, é uma planta medicinal que possui aroma semelhante ao limão quando suas folhas são cortadas e que pode ser usada para complementar o tratamento de diversas doenças, principalmente alterações no estômago.",
+      "provider": "Herbivale",
+      "category": "Ervas",
+      "id": 3
+    },
+    {
+      "imgUrl": "https://hiperideal.vteximg.com.br/arquivos/ids/167660-1000-1000/27502.jpg?v=636615816147030000",
+      "name": "Batata",
+      "cost": "1.20",
+      "description": "A batata (Solanum tuberosum L.) faz parte de diversas receitas e é um alimento bastante presente nas mesas dos brasileiros.... - Veja mais em https://www.uol.com.br/vivabem/noticias/redacao/2018/11/03/batata-ajuda-a-reduzir-estresse-e-pressao-veja-estes-e-mais-10-beneficios.htm?cmpid=copiaecola",
+      "provider": "Rural",
+      "category": "Legumes e Verduras",
+      "id": 4
+    }
+  ],
   "enterprises": [
     {
       "corporateName": "Hipermercado Angeloni Capoeiras ",
@@ -27,19 +64,41 @@
       "neighborhood": "Coqueiros",
       "city": "Florianópolis",
       "complement": "Supermercado",
-      "latitude": "-27.6007542",
-      "longitude": "-48.5893426",
+      "latitude": "-27.6046081",
+      "longitude": "-48.5776301",
       "id": 2
+    },
+    {
+      "corporateName": "Paulo Cesar Cardoso",
+      "fantasyName": "Mercado Decesar",
+      "cnpj": "25.111.116/0001-29",
+      "email": "mercadodecesar@gmail.com",
+      "cep": "88085-110",
+      "address": "Rua Campolino Alves",
+      "addressNumber": "1075",
+      "neighborhood": "Abraão",
+      "city": "Florianópolis",
+      "complement": "Próximo ao ponto final do ônibus Abraão",
+      "latitude": "-27.6053371",
+      "longitude": "-48.5903735",
+      "id": 3
+    },
+    {
+      "corporateName": "Hipermercado Angeloni Criciúma",
+      "fantasyName": "Angeloni Centenário",
+      "cnpj": "83.646.984/0016-96",
+      "email": "angeloni@angeloni.com",
+      "cep": "88801-000",
+      "address": "Avenida Centenário",
+      "addressNumber": "2699",
+      "neighborhood": "Centro",
+      "city": "Criciúma",
+      "complement": "",
+      "latitude": "-28.6834255",
+      "longitude": "-49.3848957",
+      "id": 4
     }
   ],
-  "providers": [
-    "Del Valle",
-    "Amazon",
-    "Magazine Luiza"
-  ],
-  "categories": [
-    "Sucos",
-    "Eletrônicos",
-    "Celulares"
-  ]
+  "providers": ["BBS", "Del Valle", "Herbivale", "Baungarten", "Rural"],
+  "categories": ["Sucos", "Ervas", "Frutas", "Legumes e Verduras"]
 }

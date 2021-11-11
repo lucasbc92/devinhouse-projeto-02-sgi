@@ -3,7 +3,7 @@ import MarkerClusterGroup from "react-leaflet-markercluster";
 import L from "leaflet";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 
-import marker from "../../assets/images/icon-market.png";
+import marker from "../../assets/images/icon-marker.svg";
 import "leaflet/dist/leaflet.css";
 import "react-leaflet-markercluster/dist/styles.min.css";
 import "./styles.css";
@@ -23,7 +23,7 @@ export const EnterprisesMap = () => {
       iconUrl: marker,
       iconRetinaUrl: marker,
       popupAnchor: [-0, -0],
-      iconSize: [39, 50],
+      iconSize: [50, 50],
     });
   }, []);
 

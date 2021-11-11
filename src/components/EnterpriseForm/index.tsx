@@ -90,6 +90,7 @@ export const EnterpriseForm = () => {
         }),
       });
       alert("Empresa cadastrada com sucesso!");
+      history.push("/");
     } catch (error) {
       alert("Houve um problema ao tentar cadastrar a empresa.");
     }
@@ -156,16 +157,6 @@ export const EnterpriseForm = () => {
       </div>
       <div className="address-data">
         <div className="address-group-1">
-          <label>
-            CEP
-            <input
-              type="text"
-              name="cep"
-              placeholder=""
-              value={cep}
-              onChange={(e) => setCep(e.target.value)}
-            ></input>
-          </label>
           <label className="input-address">
             Endereço
             <input
@@ -176,8 +167,6 @@ export const EnterpriseForm = () => {
               onChange={(e) => setAddress(e.target.value)}
             ></input>
           </label>
-        </div>
-        <div className="address-group-2">
           <label>
             Número
             <input
@@ -186,6 +175,18 @@ export const EnterpriseForm = () => {
               placeholder=""
               value={addressNumber}
               onChange={(e) => setAddressNumber(e.target.value)}
+            ></input>
+          </label>
+        </div>
+        <div className="address-group-2">
+          <label>
+            CEP
+            <input
+              type="text"
+              name="cep"
+              placeholder=""
+              value={cep}
+              onChange={(e) => setCep(e.target.value)}
             ></input>
           </label>
           <label>
