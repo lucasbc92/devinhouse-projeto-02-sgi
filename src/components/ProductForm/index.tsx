@@ -155,7 +155,9 @@ export const ProductForm = () => {
           >
             <option value="">Selecione um fornecedor</option>
             {providerList.map((item, index) => (
-              <option value={item}>{item}</option>
+              <option key={index} value={item}>
+                {item}
+              </option>
             ))}
           </select>
         </label>
@@ -168,7 +170,9 @@ export const ProductForm = () => {
           >
             <option value="">Selecione uma categoria</option>
             {categoryList.map((item, index) => (
-              <option value={item}>{item}</option>
+              <option key={index} value={item}>
+                {item}
+              </option>
             ))}
           </select>
         </label>

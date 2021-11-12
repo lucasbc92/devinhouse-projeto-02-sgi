@@ -34,7 +34,6 @@ export const EnterprisesMap = () => {
     try {
       fetch(URL_SERVER + "/enterprises").then((response) =>
         response.json().then((data: Enterprise[]) => {
-          console.log(data);
           const mappedData = data.map(
             ({
               corporateName,

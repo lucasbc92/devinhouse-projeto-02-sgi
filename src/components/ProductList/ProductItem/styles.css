@@ -1,0 +1,18 @@
+.product-container {
+  width: 210px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  gap: 1rem;
+}
+
+.product-container img {
+  width: 210px;
+  object-fit: contain;
+}
+
+.product-container p {
+  font-weight: bold;
+}
