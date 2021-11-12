@@ -97,8 +97,34 @@
       "latitude": "-28.6834255",
       "longitude": "-49.3848957",
       "id": 4
+    },
+    {
+      "corporateName": "a",
+      "fantasyName": "a",
+      "cnpj": "2",
+      "email": "a@a.com",
+      "cep": "8",
+      "address": "a",
+      "addressNumber": "2",
+      "neighborhood": "a",
+      "city": "a",
+      "complement": "",
+      "latitude": "0",
+      "longitude": "0",
+      "id": 5
     }
   ],
-  "providers": ["BBS", "Del Valle", "Herbivale", "Baungarten", "Rural"],
-  "categories": ["Sucos", "Ervas", "Frutas", "Legumes e Verduras"]
+  "providers": [
+    "BBS",
+    "Del Valle",
+    "Herbivale",
+    "Baungarten",
+    "Rural"
+  ],
+  "categories": [
+    "Sucos",
+    "Ervas",
+    "Frutas",
+    "Legumes e Verduras"
+  ]
 }

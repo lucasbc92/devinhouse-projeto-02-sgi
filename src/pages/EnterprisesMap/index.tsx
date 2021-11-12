@@ -65,7 +65,11 @@ export const EnterprisesMap = () => {
 
   return (
     <div className="map-container">
-      <MapContainer center={[-27.5, -48.6]} zoom={7} scrollWheelZoom={true}>
+      <MapContainer
+        center={[-13.702797, -69.6865109]}
+        zoom={4}
+        scrollWheelZoom={true}
+      >
         <TileLayer
           attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
