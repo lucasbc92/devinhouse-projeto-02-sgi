@@ -3,6 +3,7 @@ import { useHistory } from "react-router-dom";
 import { FormEvent, useState } from "react";
 //import { Link } from "react-router-dom";
 
+import { URL_SERVER } from "../../utils/constants";
 import "./styles.css";
 
 export const EnterpriseForm = () => {
@@ -68,7 +69,7 @@ export const EnterpriseForm = () => {
       return;
     }
     try {
-      await fetch("http://localhost:3333/enterprises", {
+      await fetch(URL_SERVER + "/enterprises", {
         method: "POST",
         headers: {
           Accept: "application/json",

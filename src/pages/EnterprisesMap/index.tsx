@@ -3,6 +3,7 @@ import MarkerClusterGroup from "react-leaflet-markercluster";
 import L from "leaflet";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 
+import { URL_SERVER } from "../../utils/constants";
 import marker from "../../assets/images/icon-marker.svg";
 import "leaflet/dist/leaflet.css";
 import "react-leaflet-markercluster/dist/styles.min.css";
@@ -31,7 +32,7 @@ export const EnterprisesMap = () => {
 
   useEffect(() => {
     try {
-      fetch("http://localhost:3333/enterprises").then((response) =>
+      fetch(URL_SERVER + "/enterprises").then((response) =>
         response.json().then((data: Enterprise[]) => {
           console.log(data);
           const mappedData = data.map(

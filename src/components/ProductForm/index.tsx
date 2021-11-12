@@ -3,6 +3,7 @@ import { useHistory } from "react-router-dom";
 import { FormEvent, useEffect, useState } from "react";
 //import { Link } from "react-router-dom";
 
+import { URL_SERVER } from "../../utils/constants";
 import "./styles.css";
 
 export const ProductForm = () => {
@@ -44,7 +45,7 @@ export const ProductForm = () => {
       return;
     }
     try {
-      await fetch("http://localhost:3333/products", {
+      await fetch(URL_SERVER + "/products", {
         method: "POST",
         headers: {
           Accept: "application/json",
@@ -68,10 +69,10 @@ export const ProductForm = () => {
 
   useEffect(() => {
     try {
-      fetch("http://localhost:3333/providers").then((response) =>
+      fetch(URL_SERVER + "/providers").then((response) =>
         response.json().then((data) => setProviderList(data))
       );
-      fetch("http://localhost:3333/categories").then((response) =>
+      fetch(URL_SERVER + "/categories").then((response) =>
         response.json().then((data) => setCategoryList(data))
       );
     } catch (error) {
