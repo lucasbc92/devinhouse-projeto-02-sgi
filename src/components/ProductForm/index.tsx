@@ -61,7 +61,7 @@ export const ProductForm = () => {
         }),
       });
       alert("Produto cadastrado com sucesso!");
-      history.push("/");
+      history.push("/products");
     } catch (error) {
       alert("Houve um problema ao tentar cadastrar o produto.");
     }

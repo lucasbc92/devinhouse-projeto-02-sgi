@@ -26,7 +26,7 @@ export const ProductRegister = () => {
       );
     } catch (error) {
       console.error(error);
-      alert("Houve um erro ao carregar as empresas.");
+      alert("Houve um erro ao carregar os produtos.");
     }
   }, []);
 
