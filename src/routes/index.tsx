@@ -10,7 +10,8 @@ const Routes: React.FC = () => {
   //     window.location.hostname === "127.0.0.1";
   const isDev = false;
 
-  const { signed } = useContext(AuthContext);
+  // const { signed } = useContext(AuthContext);
+  const signed = true;
 
   return signed || isDev ? <OtherRoutes /> : <SignRoutes />;
 };
