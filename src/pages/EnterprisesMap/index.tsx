@@ -65,7 +65,7 @@ export const EnterprisesMap = () => {
   return (
     <div className="map-container">
       <MapContainer
-        center={[-13.702797, -69.6865109]}
+        center={[-15.7217175, -48.0774443]}
         zoom={4}
         scrollWheelZoom={true}
       >
