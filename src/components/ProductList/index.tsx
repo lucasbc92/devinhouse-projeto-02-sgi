@@ -19,17 +19,15 @@ interface ProductListProps {
 export const ProductList: React.FC<ProductListProps> = (props) => {
   const [listOfCategories, setListOfCategories] = useState<string[]>([]);
   useEffect(() => {
-    console.log(props.products);
     let list = props.products.map((product) => product.category);
     list = list.sort().filter((v, i) => list.indexOf(v) === i);
-    console.log(list);
     setListOfCategories(list);
   }, [props.products]);
 
   return (
     <div className="product-list-container">
       {listOfCategories.map((category) => (
-        <div className="category-container">
+        <div className="category-container" key={category}>
           <h2 className="title-category">{category}</h2>
           <div className="product-list-category">
             {props.products

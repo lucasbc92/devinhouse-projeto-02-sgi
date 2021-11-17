@@ -38,10 +38,9 @@
 
 .corp-group,
 .position-group {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 2rem;
-  justify-content: space-between;
 }
 
 .address-group-1 {
@@ -56,12 +55,9 @@
   gap: 1rem;
 }
 
-.input-address,
-.input-email {
-  flex-grow: 2;
-}
-
 @media (max-width: 768px) {
+  .corp-group,
+  .position-group,
   .address-group-2 {
     display: grid;
     grid-template-columns: 1fr;

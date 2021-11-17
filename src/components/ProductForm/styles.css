@@ -67,5 +67,6 @@
 @media (max-width: 768px) {
   .product-form-container .description-group textarea {
     width: auto;
+    height: 160px;
   }
 }
