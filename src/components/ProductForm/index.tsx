@@ -86,7 +86,7 @@ export const ProductForm = () => {
   return (
     <form onSubmit={handleSubmit} className="product-form-container">
       <div className="form-title">
-        <h1>Novo produto</h1>
+        <h1>Novo Produto</h1>
         <div className="form-buttons">
           <button className="btn-cancelar" onClick={() => history.push("/")}>
             Cancelar

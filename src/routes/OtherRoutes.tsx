@@ -3,6 +3,7 @@ import { NavBar } from "../components/NavBar";
 import { EnterpriseRegister } from "../pages/EnterpriseRegister";
 import { EnterprisesMap } from "../pages/EnterprisesMap";
 import { Logout } from "../pages/Logout";
+import { Products } from "../pages/Products";
 import { ProductRegister } from "../pages/ProductRegister";
 
 const OtherRoutes = () => (
@@ -30,7 +31,8 @@ const OtherRoutes = () => (
     <Switch>
       <Route path="/" component={EnterprisesMap} exact />
       <Route path="/empresas" component={EnterpriseRegister} exact />
-      <Route path="/produtos" component={ProductRegister} exact />
+      <Route path="/produtos" component={Products} exact />
+      <Route path="/produtos/new" component={ProductRegister} exact />
       <Route path="/logout" component={Logout} exact />
     </Switch>
   </BrowserRouter>
